@@ -1,0 +1,910 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width:768px) {
+    /* HEADER  */
+    body >header{
+        background: black;
+        min-height: 40vh;
+    }
+    header >.parent{
+        flex-direction: column;
+        align-items: center;
+    }
+    header >.parent >.logo>h1 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    header >.parent >.logo >h3{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .parent >.nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-right: 20px;
+    }
+    .parent >.nav >nav >a{
+        cursor: pointer;
+        font-size: 5px;
+    }
+   header >.child >h1{
+        font-size: 20px;
+    }
+   header >.child >h2{
+        font-size: 20px;
+    }
+    header >.child >p{
+        font-size: 12px;
+        width: 50%;
+    }
+    .child >.buttons >.btn1 >button{
+        height: 15px;
+        width: 90px;
+        border-radius: 5px;
+    }
+    .child >.buttons >.btn1 >button >h1{
+        font-size: 10px;
+    }
+    .child >.buttons >.btn2 >button{
+        height: 15px;
+        border-radius: 5px;
+    }
+    .child >.buttons >.btn2 >button >h1{
+        font-size: 7px;
+    }
+    /* MAIN */
+    main >.set1{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+        gap: calc(5px);
+    }
+    .set1 >.img1 >img{
+        width: 120px;
+        height: 140px;
+
+    }
+    .set1 >.img2 >img{
+        width: 120px;
+        height: 135px;
+    }
+    .set1 >.img3 >img{
+        width: 120px;
+        height: 140px;   
+    }
+    .set1 >.img4 >img{
+        width: 120px;
+        height: 135px;
+    }
+    /* SECTION */
+    section >.fonts >h1{
+        font-size: 15px;
+    }
+    section >.fonts >h2{
+        font-size: 15px;
+    }
+    section >.set2{
+        flex-wrap: wrap;
+        align-items: center;
+    } 
+    .set2 >.im1 >img{
+        width: 150px;
+    } 
+    .set2 >.im2 >img{
+        width: 150px;
+    } 
+    .set2 >.im3 >img{
+        width: 150px;
+    } 
+    .set2 >.im4 >img{
+        width: 150px;
+    } 
+    .dm >.set3{
+        width: 290px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    .dm >.set3 >.image >img{
+        width: 55px;
+        height: auto;
+    }
+    /* LETTER */
+    .dm >.set3 >.letter >h3{
+        font-size: 9px;
+    }
+    .dm >.set3 >.letter >h1{
+        font-size: 13px;
+    }
+    .dm >.set3 >.letter >p{
+        font-size: 7px;
+        width: 60%;
+    }
+   .dm >.set3 >.letter >h4{
+    font-size: 8px;
+   }
+   .dm >.set3 >.letter >button{
+    height: auto;
+   }
+   .dm >.set3 >.letter >button >h1{
+    font-size: 6px;
+   }
+   /* TESTIMONIALS & SECTION1 */
+   .section1 >.test >h3{
+    margin-top: 7px;
+     font-size: 15px;
+   }
+   .section1 >.test >h1{
+     font-size: 15px;
+   }
+   /* SECTION2 */
+   .section2{
+    flex-direction: column;
+    margin-left: 20px;
+   }
+   .section2 >.item1 >#profile >img{
+    width: 15px;
+    height: 20px;
+   }
+   .section2 >.item1 >p{
+     font-size: 12px;
+   }
+   .section2 >.item1 >#profile >p{
+    font-size: 7px;
+   }
+   .section2 >.item2 >#profile2 >img{
+    width: 20px;
+   }
+   .section2 >.item2 >p{
+     font-size: 12px;
+   }
+   .section2 >.item2 >#profile2 >p{
+    font-size: 7px;
+   }
+      .section2 >.item3 >#profile3 >img{
+    width: 15px;
+    height: 20px;
+   }
+   .section2 >.item3 >p{
+     font-size: 12px;
+   }
+   .section2 >.item3 >#profile3 >p{
+    font-size: 7px;
+   }
+   .section2 >.item4 >#profile4 >img{
+    width: 20px;
+   }
+   .section2 >.item4 >p{
+     font-size: 12px;
+   }
+   .section2 >.item4 >#profile4 >p{
+    font-size: 7px;
+   }
+   /* FOOTER */
+  body >footer{
+    background-color: black solid;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+   }
+   footer >.foot1{
+    margin-left: 20px;
+   }
+   footer >.foot1 >h1{
+    font-size: 12px;
+   }
+   footer >.foot1 >h3{
+    font-size: 8px;
+    margin-bottom: 0;
+   }
+   footer >.foot1 >p{
+    font-size: 6px;
+    
+    width: 100%;
+   }
+   .foot1 >.icons >.pic1 >img{
+    width: 10px;
+    margin-bottom: 30px;
+   }
+   .foot1 >.icons >.pic3 >img{
+    width: 10px;
+   }
+   footer >.foot2 >h1{
+    font-size: 12px;
+   }
+   footer >.foot2 >p{
+    font-size: 8px;
+   }
+   footer >.foot3 >h1{
+    font-size: px;
+   }
+   footer >.foot3 >p{
+    font-size: 8px;
+   }
+   footer >.foot3 >h1{
+    font-size: 9px;
+   }
+   footer >.foot3 >p{
+    font-size: 8px;
+   }
+   footer >.foot4{
+    margin-right: 30px;
+   }
+   footer >.foot4 >h1{
+    font-size: 9px;
+   }
+   footer >.foot4 >p{
+    font-size: 7px;
+   }
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.818);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+}
+.parent{
+    display: flex;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+.logo > h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+   font-family: "Merriweather", serif;
+}
+
+.logo > h3{
+    font-size: 10px;
+    font-weight: 600;
+    color: goldenrod;
+    margin-left: 5px;
+    margin-bottom: 10px;
+     font-family: "Merriweather", serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+}
+
+.nav > nav > a{
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  font-weight:600;
+  cursor: pointer;
+}
+
+
+.nav > nav >a:hover{
+    background: goldenrod;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.child{
+    margin-left: 40px;
+    margin-top: 8em;
+}
+
+.child > h1{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+   font-family: "Merriweather", serif;
+}
+
+.child > h2{
+    color: goldenrod;
+    font-size: 25px;
+}
+
+.child > p{
+    color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      width: 12%;
+      margin-top: 10px;
+}
+
+.buttons{
+    display: flex;
+  
+}
+
+.buttons > .btn1 >button {
+    margin-top: 20px;
+    font-size: 7px;
+    height: 25px;
+    background-color: goldenrod;
+    border: rgba(0, 0, 0, 0.788);
+}
+
+.buttons > .btn2 > button{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 5px;
+    height: 25px;
+    color: white;
+    background-color:black;
+    border-color: #ffffff;
+}
+
+.set1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+main{
+    background-color: transparent;
+}
+
+ .img1 > img{
+    width: 20em;
+    margin-left: 10px;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
+.img1:hover{
+    transform: translateY(-6px); 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+.img2 > img{
+    width: 28em;
+    margin-left: 10px;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.img2:hover{
+    transform: translateY(-6px);
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.img3 > img{
+    width: 18em;
+    border-radius: 16px;
+    transition-duration: 5s;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 3s;  
+    margin-bottom: 20px;  
+}
+
+.img3:hover{
+    transform: translateY(-6px);
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+.img4 > img{
+     width: 28em;
+     height: 32em;
+    border-radius: 16px;
+    transition-duration: 4s;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-delay: 4s;    
+} 
+
+.img4:hover{
+    transform: translateY(-6px);
+}
+
+section{
+    margin-top: 20px;
+}
+
+.fonts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .fonts > h1{
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    color: goldenrod;
+}
+
+.fonts > h2{
+    color: black;
+    font-size: 17px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+}
+
+.set2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+
+.im1 > img{
+    width: 25em;
+    border-radius: 20px;
+    padding: 10px;
+    animation-name: slideInLeft;
+    animation-duration: 2.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.im1 > h2{
+  font-family: "Merriweather", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: unset;
+
+  animation-name: slideInright;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+
+@keyframes slideInright {
+    from{
+        transform: translateX(300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.im2 > img{
+    width: 25em;
+    border-radius: 20px;
+    padding: 10px;
+    animation-name: slideInLeft;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+} 
+
+.im2 > h2{
+  font-family: "Merriweather", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideInright;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;  
+}
+
+.im3 > img{
+    width: 25em;
+    border-radius: 20px;
+    padding: 10px;
+    animation-name: slideInLeft;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+
+.im3 > h2{
+    font-family: "Merriweather", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: slideInright;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+
+.im4 > img{
+   width: 25em;
+   border-radius: 20px;
+   padding: 10px;
+    animation-name: slideInLeft;
+    animation-duration: 4.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+}
+
+.im4 > h2{
+  font-family: "Merriweather", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  animation-name: slideInright;
+  animation-duration: 4.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+section >.dm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.set3{
+    background-color: rgb(0, 0, 0);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+    width: 500px;
+    height: 200px;
+}
+
+.image > img{
+    width: 15em;
+    height: 200px;
+}
+
+
+
+
+.letter{
+    margin-top: 25px;
+    margin-left: 20px;
+
+}
+
+.letter > h3{
+    font-size: 15px;
+    color: goldenrod;
+    font-weight: 600;
+    font-family: "Merriweather", serif;
+}
+
+.letter > h1{
+    color: #ffffff;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Merriweather", serif;
+
+}
+
+.letter > p{
+    color: #ffffff;
+    font-size: 12px;
+    width: 55%;
+       font-family: "Roboto", sans-serif;
+}
+
+.letter > h4{
+    color: goldenrod;
+    font-size: 12px;
+  
+}
+
+.letter > button{
+
+    font-size: 7px;
+    height: 25px;
+    background-color: goldenrod;
+    border: rgba(0, 0, 0, 0.788);  
+}
+
+
+.section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.test > h3{
+    font-size: 16px;
+    color: goldenrod;
+    font-weight: 600;
+    font-family: "Merriweather", serif;
+    margin-left: 5em;
+}
+
+
+.test > h1{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Merriweather", serif;
+}
+
+
+.section2{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.item1 > img{
+    width: 50px;
+    height: 40px;
+}
+
+.item1 > p{
+  font-size: 12px;
+  font-weight: 700;
+  width: 55%;
+}
+
+#profile{
+    display: flex;
+}
+
+#profile > img{
+    width: 15px;
+    border-radius: 20px;
+} 
+
+#profile > p{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+
+.item2 > img{
+        width: 50px;
+    height: 40px;
+}
+
+.item2 >p{
+      font-size: 12px;
+  font-weight: 700;
+  width: 58%;
+}
+
+#profile2{
+    display: flex;
+}
+
+#profile2 > img{
+  width: 15px;
+   border-radius: 20px; 
+}
+#profile2 > p{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;  
+    margin-left: 5px;
+}
+
+
+.item3 > img{
+        width: 50px;
+    height: 40px;
+}
+
+.item3 > p{
+  font-size: 12px;
+  font-weight: 700;
+  width: 55%;
+}
+
+#profile3{
+    display: flex;
+}
+
+#profile3 > img{
+  width: 15px;
+  border-radius: 20px;     
+}
+
+
+#profile3 > p{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;  
+    margin-left: 5px;    
+}
+
+.item4 > img{
+    width: 50px;
+    height: 40px;   
+}
+
+.item4 > p{
+  font-size: 12px;
+  font-weight: 700;
+  width: 55%;
+}
+
+#profile4{
+    display: flex;
+}
+
+#profile4 > img{
+  width: 15px;
+  border-radius: 20px;    
+}
+
+#profile4 > p{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 5px;   
+}
+
+footer{
+    display: flex;
+    background-color: black;
+}
+
+.foot1 > h1{
+   font-size: 25px;
+   font-weight: 600;
+   margin-top: 10px;
+   color: goldenrod;
+    font-family: "Merriweather", serif;   
+}
+
+.foot1 > h3{
+    font-size: 9px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: "Merriweather", serif;   
+}
+
+
+.foot1 > p{
+    margin-top: 7px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Merriweather", serif;  
+    width: 60%; 
+}
+
+.icons{
+    display: flex;
+    margin-top: 5px;
+}
+
+
+
+.pic1 > img{
+    width: 20px;
+    border-radius: 20px;
+    border: black;
+    margin-left: 5px;
+}
+
+
+.pic3 > img{
+    width: 20px;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+
+.foot2{
+    margin-left: 25px;
+}
+
+.foot2 > h1{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.foot2 >p{
+   color: #ffffff;
+   font-size: 16px;
+   margin-top: 5px;
+}
+
+hr{
+    width:1px;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.foot3{
+    margin-left: 30px;
+}
+
+.foot3 > h1{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.foot3 > p{
+   color: #ffffff;
+   font-size: 16px;
+   margin-top: 5px;    
+}
+
+.foot4{
+    margin-left: 35px;
+}
+
+.foot4 > h1{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffffff;   
+}
+
+.foot4 > p{
+   color: #ffffff;
+   font-size: 16px;
+   margin-top: 5px;    
+}
