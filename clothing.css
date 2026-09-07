@@ -7,7 +7,7 @@
     /* HEADER  */
     body >header{
         background: black;
-        min-height: 40vh;
+        min-height: 40vh
     }
     header >.parent{
         flex-direction: column;
@@ -30,7 +30,10 @@
     }
     .parent >.nav >nav >a{
         cursor: pointer;
-        font-size: 5px;
+        font-size: 6px;
+    }
+    header >.child{
+        margin-bottom: 20px;
     }
    header >.child >h1{
         font-size: 20px;
