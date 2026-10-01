@@ -7,18 +7,18 @@
     /* HEADER  */
     body >header{
         background: black;
-        min-height: 40vh
+        min-height: 50vh;
     }
     header >.parent{
         flex-direction: column;
         align-items: center;
     }
     header >.parent >.logo>h1 {
-        font-size: 20px;
+        font-size: 25px;
         margin-left: 15px;
     }
     header >.parent >.logo >h3{
-        font-size: 15px;
+        font-size: 20px;
         margin-right: 10px;
     }
     .parent >.nav{
@@ -29,123 +29,157 @@
         margin-right: 20px;
     }
     .parent >.nav >nav >a{
-        cursor: pointer;
-        font-size: 6px;
-    }
-    header >.child{
-        margin-bottom: 20px;
+        gap: calc(-10px);
+        font-size: 7px;
     }
    header >.child >h1{
-        font-size: 20px;
+        font-size: 25px;
     }
    header >.child >h2{
-        font-size: 20px;
+        font-size: 25px;
     }
     header >.child >p{
-        font-size: 12px;
+        font-size: 16px;
         width: 50%;
     }
+    .child >.buttons >{
+        margin-right: 20px;
+    }
     .child >.buttons >.btn1 >button{
-        height: 15px;
+        height: 25px;
         width: 90px;
         border-radius: 5px;
     }
     .child >.buttons >.btn1 >button >h1{
-        font-size: 10px;
+        font-size: 11px;
     }
     .child >.buttons >.btn2 >button{
-        height: 15px;
+        height: 25px;
+        margin-right: 30px;
         border-radius: 5px;
     }
     .child >.buttons >.btn2 >button >h1{
-        font-size: 7px;
+        font-size: 10.5px;
     }
     /* MAIN */
     main >.set1{
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: space-around;
-        gap: calc(5px);
+        display: grid;
+        align-items: center;
+        grid-template-columns: 110px 150px;
+        gap: calc(25px);
+   
     }
     .set1 >.img1 >img{
-        width: 120px;
-        height: 140px;
+        width: 130px;
+        height: 160px;
 
     }
     .set1 >.img2 >img{
-        width: 120px;
-        height: 135px;
+        width: 130px;
+        height: 155px;
     }
     .set1 >.img3 >img{
-        width: 120px;
-        height: 140px;   
+        width: 130px;
+        height: 170px; 
+      
     }
     .set1 >.img4 >img{
-        width: 120px;
-        height: 135px;
+        width: 150px;
+        height: 170px;
+        margin-bottom:20px;
+    
     }
     /* SECTION */
+    section >.fonts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
     section >.fonts >h1{
-        font-size: 15px;
+        font-size: 20px;
     }
     section >.fonts >h2{
-        font-size: 15px;
+        font-size: 19px;
     }
     section >.set2{
-        flex-wrap: wrap;
+        display: grid;
+        justify-content: center;
+        grid-template-columns:160px 160px ;
+        gap: calc(10px);
         align-items: center;
     } 
     .set2 >.im1 >img{
-        width: 150px;
-    } 
+        width: 170px;
+    }
+    .set2 >.im1 >h2{
+        font-size: 14px;
+    }
+
     .set2 >.im2 >img{
-        width: 150px;
+        width: 160px;
     } 
+    .set2 >.im2 >h2{
+        font-size: 14px;
+    }
+
     .set2 >.im3 >img{
-        width: 150px;
+        width: 160px;
     } 
+    .set2 >.im3 >h2{
+        font-size: 14px;
+    }
+
     .set2 >.im4 >img{
-        width: 150px;
+        width: 160px;
     } 
+    .set2 >.im4 >h2{
+        font-size: 14px;
+    }
     .dm >.set3{
         width: 290px;
         height: auto;
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
         align-items: center;
     } 
     .dm >.set3 >.image >img{
-        width: 55px;
+        width: 80px;
         height: auto;
     }
     /* LETTER */
     .dm >.set3 >.letter >h3{
-        font-size: 9px;
+        font-size: 12px;
     }
     .dm >.set3 >.letter >h1{
-        font-size: 13px;
+        font-size: 16px;
     }
     .dm >.set3 >.letter >p{
-        font-size: 7px;
-        width: 60%;
+        font-size: 10px;
+        width: 80%;
     }
    .dm >.set3 >.letter >h4{
-    font-size: 8px;
+    font-size: 10px;
    }
    .dm >.set3 >.letter >button{
     height: auto;
+    border-radius:2px;
    }
    .dm >.set3 >.letter >button >h1{
-    font-size: 6px;
+    font-size: 8px;
    }
    /* TESTIMONIALS & SECTION1 */
+   .section1 >.test{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
    .section1 >.test >h3{
-    margin-top: 7px;
-     font-size: 15px;
+     font-size: 20px;
    }
    .section1 >.test >h1{
-     font-size: 15px;
+     font-size: 18px;
    }
    /* SECTION2 */
    .section2{
@@ -153,42 +187,44 @@
     margin-left: 20px;
    }
    .section2 >.item1 >#profile >img{
-    width: 15px;
-    height: 20px;
+    width: 20px;
+    height: 30px;
    }
    .section2 >.item1 >p{
-     font-size: 12px;
+     font-size: 15px;
    }
    .section2 >.item1 >#profile >p{
-    font-size: 7px;
+    font-size: 12px;
    }
    .section2 >.item2 >#profile2 >img{
     width: 20px;
+    height: 30px;
    }
    .section2 >.item2 >p{
      font-size: 12px;
    }
    .section2 >.item2 >#profile2 >p{
-    font-size: 7px;
+    font-size: 12px;
    }
       .section2 >.item3 >#profile3 >img{
-    width: 15px;
-    height: 20px;
+    width: 20px;
+    height: 30px;
    }
    .section2 >.item3 >p{
-     font-size: 12px;
+     font-size: 15px;
    }
    .section2 >.item3 >#profile3 >p{
-    font-size: 7px;
+    font-size: 12px;
    }
    .section2 >.item4 >#profile4 >img{
     width: 20px;
+    height: 30px;
    }
    .section2 >.item4 >p{
-     font-size: 12px;
+     font-size: 15px;
    }
    .section2 >.item4 >#profile4 >p{
-    font-size: 7px;
+    font-size: 10px;
    }
    /* FOOTER */
   body >footer{
@@ -198,17 +234,17 @@
     margin-top: 15px;
    }
    footer >.foot1{
-    margin-left: 20px;
+    margin-left: 10px;
    }
    footer >.foot1 >h1{
     font-size: 12px;
    }
    footer >.foot1 >h3{
-    font-size: 8px;
+    font-size: 9px;
     margin-bottom: 0;
    }
    footer >.foot1 >p{
-    font-size: 6px;
+    font-size: 7px;
     
     width: 100%;
    }
@@ -223,34 +259,31 @@
     font-size: 12px;
    }
    footer >.foot2 >p{
-    font-size: 8px;
-   }
-   footer >.foot3 >h1{
-    font-size: px;
-   }
-   footer >.foot3 >p{
-    font-size: 8px;
-   }
-   footer >.foot3 >h1{
     font-size: 9px;
    }
+   footer >.foot3 >h1{
+    font-size: p12x;
+   }
    footer >.foot3 >p{
-    font-size: 8px;
+    font-size: 9px;
+   }
+   footer >.foot3 >h1{
+    font-size: 12px;
+   }
+   footer >.foot3 >p{
+    font-size: 9px;
    }
    footer >.foot4{
     margin-right: 30px;
    }
    footer >.foot4 >h1{
-    font-size: 9px;
+    font-size: 11px;
    }
    footer >.foot4 >p{
-    font-size: 7px;
+    font-size: 8px;
    }
 }
 
-html {
-    width: 100%;
-}
 
 body {
     margin: 0;
@@ -298,22 +331,16 @@ header{
   text-decoration: none;
   font-size: 12px;
   color: white;
-  margin-right: 25px;
+  margin-right: 20px;
   margin-bottom: 10px;
   font-weight:600;
   cursor: pointer;
 }
 
 
-.nav > nav >a:hover{
-    background: goldenrod;
-    border-radius: 15px;
-    padding: 5px;
-}
-
 .child{
     margin-left: 40px;
-    margin-top: 8em;
+    margin-top: 5em;
 }
 
 .child > h1{
@@ -333,34 +360,47 @@ header{
       font-family: "Roboto", sans-serif;
       font-size: 12px;
       width: 12%;
-      margin-top: 10px;
 }
 
 .buttons{
     display: flex;
-  
+    margin-bottom: 20px;
 }
 
 .buttons > .btn1 >button {
     margin-top: 20px;
     font-size: 7px;
-    height: 25px;
+    border-radius:7px;
+    height: 30px;
     background-color: goldenrod;
     border: rgba(0, 0, 0, 0.788);
+    cursor: pointer;
+ 
+}
+
+.buttons  >.btn1 >button:hover{
+   box-shadow: 5px 3px 8px goldenrod;
+      transform: translateY(-2px);
 }
 
 .buttons > .btn2 > button{
     margin-top: 20px;
     margin-left: 30px;
     font-size: 5px;
-    height: 25px;
+    height: 30px;
     color: white;
+    border-radius: 7px;
     background-color:black;
     border-color: #ffffff;
+    cursor: pointer;
+}
+.buttons  >.btn2 >button:hover{
+   box-shadow: 5px 3px 8px grey;
+   transform: translateY(-2px);
 }
 
 .set1{
-    margin-top: 20px;
+    margin-top: 10em;
     display: flex;
     justify-content: space-around;
 }
@@ -437,14 +477,12 @@ main{
 }
 
 section{
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .fonts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top:100px;
+    margin-left: 20px;
 }
 
  .fonts > h1{
@@ -456,7 +494,7 @@ section{
 
 .fonts > h2{
     color: black;
-    font-size: 17px;
+    font-size: 23px;
     font-family: "Merriweather", serif;
     font-weight: 600;
 }
@@ -464,7 +502,7 @@ section{
 .set2{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 100px;
     overflow: hidden;
 }
 
@@ -604,16 +642,18 @@ section >.dm{
 .set3{
     background-color: rgb(0, 0, 0);
    display: flex;
+   border-radius: 7px;
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   margin-top: 20px;
+   margin-top: 100px;
     width: 500px;
     height: 200px;
 }
 
 .image > img{
     width: 15em;
+    border-radius: 8px;
     height: 200px;
 }
 
@@ -665,26 +705,21 @@ section >.dm{
 
 
 .section1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+    margin-left: 20px;
+  margin-top: 70px;
 }
 
-
-
 .test > h3{
-    font-size: 16px;
+    font-size: 19px;
     color: goldenrod;
     font-weight: 600;
     font-family: "Merriweather", serif;
-    margin-left: 5em;
+
 }
 
 
 .test > h1{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
     font-family: "Merriweather", serif;
 }
@@ -693,6 +728,7 @@ section >.dm{
 .section2{
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
 
 }
 
@@ -859,7 +895,7 @@ footer{
 }
 
 .foot2{
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .foot2 > h1{
@@ -881,7 +917,7 @@ hr{
     margin-left: 7px;
 }
 .foot3{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .foot3 > h1{
@@ -897,7 +933,7 @@ hr{
 }
 
 .foot4{
-    margin-left: 35px;
+    margin-left: 25px;
 }
 
 .foot4 > h1{
